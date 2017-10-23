@@ -39,15 +39,17 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@id/app_bar" />
+        android:text="@id/app_bar"
+        android:visibility="invisible" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/stopButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|left"
-        android:layout_margin="16dp"
+        android:layout_marginRight="16dp"
         android:clickable="true"
+        app:elevation="10dp"
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="top|right"
         app:srcCompat="@android:drawable/ic_media_pause" />
@@ -57,8 +59,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|left"
-        android:layout_margin="56dp"
+        android:layout_marginRight="76dp"
         android:clickable="true"
+        app:elevation="10dp"
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="top|right"
         app:srcCompat="@android:drawable/ic_media_play" />
