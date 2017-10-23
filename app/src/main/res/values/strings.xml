@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HomeSec</string>
+    <string name="large_text">
+        "Placeholder for images.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>

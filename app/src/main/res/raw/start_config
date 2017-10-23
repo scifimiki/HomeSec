@@ -1,0 +1,18 @@
+#!/bin/bash
+# remote start / stop of security system
+COMMAND=start
+#COMMAND=stop
+if [ "$COMMAND" = "start" ]
+then
+	echo $(date) "Start motion service remotely"
+	sudo service motion start
+	# upload the original command file
+	/home/pi/gdrive update 0B68qLJdVq5WQVTV4NTVnWmVGbHc /home/pi/remote_security/bck/remote_security.txt
+fi
+if [ "$COMMAND" = "stop" ]
+then
+	echo $(date) "Stop motion service remotely"
+	sudo service motion stop
+	# upload the original command file
+	/home/pi/gdrive update 0B68qLJdVq5WQVTV4NTVnWmVGbHc /home/pi/remote_security/bck/remote_security.txt
+fi
